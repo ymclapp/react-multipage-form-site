@@ -8,12 +8,19 @@ import NavMenu from './components/partials/NavMenu';
 import Header from './components/partials/Header';
 import Footer from './components/partials/Footer';
 
+//public pages
 import Home from './components/Home';
 
-
+//user pages
 import Registration from './components/user/Registration';
 import Login from './components/auth/login';
+
+//conference registration
 import DemoForm from './components/conference/DemoForm';
+
+//conference dashboard
+import Demographics from './components/Demographics';
+import Demo from './components/dashboard/Demographics';
 
 function App() {
   return (
@@ -37,6 +44,11 @@ function App() {
 
         <Route path='/demoform'>
           <DemoForm />
+        </Route>
+
+        <Route path='/demographics'>
+          {/* <Demographics /> */}
+          <Demo />
         </Route>
 
       </Switch>
