@@ -10,22 +10,28 @@ import Footer from './components/partials/Footer';
 
 import Home from './components/Home';
 
+
+import Registration from './components/user/Registration';
+
 function App() {
   return (
     <>
-    <NavMenu />
-    <Header />
+      <NavMenu />
+      <Header />
 
-    <Switch>
+      <Switch>
 
-      <Route exact path={['/', '/home']}>
-        <Home />
-      </Route>
+        <Route exact path={['/', '/home']}>
+          <Home />
+        </Route>
 
+        <Route path='/registration'>
+          <Registration />
+        </Route>
 
-    </Switch>
+      </Switch>
 
-    <Footer />
+      <Footer />
 
     </>
   );
