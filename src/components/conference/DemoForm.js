@@ -20,17 +20,19 @@ export default function Registration(props) {
 
         await fetch(`${registrationApi}`, {
             method: 'post',
-            headers:  {
-                'Content-Type':  'application/json',
+            headers: {
+                'Content-Type': 'application/json',
                 //'Accept': 'application/json'
             },
 
-            body:  JSON.stringify(
-                {data:
-                { address, city, state, zip, phone }}),
+            body: JSON.stringify(
+                {
+                    data:
+                        { address, city, state, zip, phone }
+                }),
         })
-        .then(response => response.text())
-        .then(data => console.log(data));
+            .then(response => response.text())
+            .then(data => console.log(data));
 
         //console.log('Submitted successfully');
         //onSave();
@@ -40,6 +42,7 @@ export default function Registration(props) {
 
     return (
         <Form onSubmit={handleRegistrationAdd} title='Demographics Form' className='demo-form'>
+            <h4 className='form-title text-center'>Step 1</h4>
 
             <Form.Group className='mb-3' controlId='form.address'>
                 <Form.Label>Address</Form.Label>
