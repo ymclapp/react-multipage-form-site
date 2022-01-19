@@ -18,9 +18,9 @@ import Login from './components/auth/login';
 //conference registration
 import DemoForm from './components/conference/DemoForm';
 
-//conference dashboard
-import Demographics from './components/Demographics';
+//dashboard
 import Demo from './components/dashboard/Demographics';
+import Users from './components/dashboard/Users';
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
         </Route>
 
         <Route path='/demographics'>
-          {/* <Demographics /> */}
+          <Users />
           <Demo />
         </Route>
 

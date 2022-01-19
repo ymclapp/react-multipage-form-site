@@ -34,4 +34,4 @@
 
 ##  Strapi:
 1.  For the initial state for the data that you will "get", you have to use setState({data: []}); to be able to get the .map to work in the return
-2.  
+2.  For the initial state when "get"ting users, you use ('') to be able to get the .map to work in the return
