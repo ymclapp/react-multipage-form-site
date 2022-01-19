@@ -28,9 +28,18 @@ export default function NavMenu() {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link as={Link} to='/home' className='navbar-link'>Home</Nav.Link>
                 <Nav.Link as={Link} to='/registration' className='navbar-link'>User Registration</Nav.Link>
-                <Nav.Link as={Link} to='/demographics' className='navbar-link'>Demographics</Nav.Link>
+                {/* <Nav.Link as={Link} to='/demographics' className='navbar-link'>Demographics</Nav.Link> */}
                 <NavDropdown title="Conference Registration" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href='/demoform'>Conference Demographic Form</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action5">
+                    Something else here
+                  </NavDropdown.Item>
+                </NavDropdown>
+
+                <NavDropdown title="Conference Dashboard" id="offcanvasNavbarDropdown">
+                  <NavDropdown.Item href='/demographics'>Attendee Demographics</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
