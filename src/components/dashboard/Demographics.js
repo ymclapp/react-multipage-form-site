@@ -24,6 +24,7 @@ export default function Demographics() {
     return (
         <>
         <Container className='showDemographics mt-4'>
+            <h4>Conference Demographic List</h4>
             {/* <h3>This will show the raw data for all demographics - curly brace JSON.stringify(demographics.data) curly brace and use API = http://localhost:1337/api/demographics</h3>
             <p>{JSON.stringify(demographics.data)}</p> */}
             <ul>
