@@ -13,6 +13,7 @@ import Home from './components/Home';
 
 import Registration from './components/user/Registration';
 import Login from './components/auth/login';
+import DemoForm from './components/conference/DemoForm';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 
         <Route path='/login'>
           <Login />
+        </Route>
+
+        <Route path='/demoform'>
+          <DemoForm />
         </Route>
 
       </Switch>
