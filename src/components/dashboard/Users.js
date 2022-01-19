@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardGroup, Container } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 
 const API = 'http://localhost:1337/api/users';
 
+//this is just to "get" users to display on the dashboard
 
 export default function Users() {
 

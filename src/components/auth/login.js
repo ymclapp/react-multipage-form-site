@@ -39,11 +39,16 @@ export default function Login() {
                 <FloatingLabel controlId='floatingInput' label='Password:  ' className='loginPassword'>
                     <Form.Control type='password' name='password' />
                 </FloatingLabel>
-
+                
                 <Button type='submit' className='login-button'>Log In</Button>
+                <br/><br/>
+                <a href='/registration'>Create Account</a>
 
             </Form.Group>
         </Form>
+        <div>
+        
+        </div>
         </>
     )
 }
