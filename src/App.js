@@ -12,6 +12,7 @@ import Home from './components/Home';
 
 
 import Registration from './components/user/Registration';
+import Login from './components/auth/login';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
 
         <Route path='/registration'>
           <Registration />
+        </Route>
+
+        <Route path='/login'>
+          <Login />
         </Route>
 
       </Switch>
