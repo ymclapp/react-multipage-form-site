@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 import { Form, FloatingLabel, Button } from 'react-bootstrap';
 
 import './Registration.css';
 
-const userApi = 'http://localhost:1337/auth/local/register';
+const userApi = 'http://localhost:1337/api/auth/local/register';
 
-export default function Registration(props) {
+export default function Registration() {
+
+    const history = useHistory();
 
 const [username, setUsername] = useState('');
 const [email, setEmail] = useState('');
@@ -14,10 +18,10 @@ const [lastName, setLastName] = useState('');
 const [password, setPassword] = useState('');
 
     async function handleNewUserSubmit(event) {
-        const form = event.target;
-        const { username, email, firstName, lastName, password } = form.elements;
-
         event.preventDefault();
+        // const form = event.target;
+        // const { username, email, firstName, lastName, password } = form.elements;
+
         console.log('Submitting....');
 
         await fetch(`${userApi}`, {
@@ -45,7 +49,7 @@ const [password, setPassword] = useState('');
         // };
         // console.log(registerData);
 
-        form.reset();
+        //form.reset();
     }
 
     return (
