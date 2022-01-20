@@ -1,5 +1,4 @@
-import React, { useState, useRouter } from 'react';
-import Axios from 'axios';
+import React, { useState } from 'react';
 import { Form, FloatingLabel, Button } from 'react-bootstrap';
 
 import './Registration.css';
