@@ -1,4 +1,4 @@
-import React from 'react';
+//import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -25,6 +25,7 @@ import Users from './components/dashboard/Users';
 function App() {
   return (
     <>
+    <Router>
       <NavMenu />
       <Header />
 
@@ -54,6 +55,7 @@ function App() {
       </Switch>
 
       <Footer />
+      </Router>
 
     </>
   );
