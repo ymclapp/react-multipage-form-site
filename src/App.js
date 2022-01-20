@@ -17,10 +17,13 @@ import Login from './components/auth/login';
 
 //conference registration
 import DemoForm from './components/conference/DemoForm';
+import SessionsForm from './components/conference/SessionForm';
+
 
 //dashboard
 import Demo from './components/dashboard/Demographics';
 import Users from './components/dashboard/Users';
+import Sessions from './components/dashboard/Sessions';
 
 function App() {
   return (
@@ -47,9 +50,14 @@ function App() {
           <DemoForm />
         </Route>
 
+        <Route path='/sessionsform'>
+          <SessionsForm />
+        </Route>
+
         <Route path='/demographics'>
           <Users />
           <Demo />
+          <Sessions />
         </Route>
 
       </Switch>
