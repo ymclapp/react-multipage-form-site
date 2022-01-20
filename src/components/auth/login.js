@@ -30,13 +30,13 @@ export default function Login() {
             <h4 className='form-title text-center'>Log In to Continue </h4>
             <Form.Group>
                 
-                <FloatingLabel controlId='floatingInput' label='Username:  ' className='loginUsername'>
+                <FloatingLabel controlId='floatingInput1' label='Username:  ' className='loginUsername'>
                     <Form.Control type='text' name='username' />
                 </FloatingLabel>
 
                 <br />
 
-                <FloatingLabel controlId='floatingInput' label='Password:  ' className='loginPassword'>
+                <FloatingLabel controlId='floatingInput2' label='Password:  ' className='loginPassword'>
                     <Form.Control type='password' name='password' />
                 </FloatingLabel>
                 

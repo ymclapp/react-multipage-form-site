@@ -18,9 +18,11 @@ import Login from './components/auth/login';
 //conference registration
 import DemoForm from './components/conference/DemoForm';
 
+
 //dashboard
 import Demo from './components/dashboard/Demographics';
 import Users from './components/dashboard/Users';
+import Sessions from './components/dashboard/Sessions';
 
 function App() {
   return (
@@ -50,6 +52,7 @@ function App() {
         <Route path='/demographics'>
           <Users />
           <Demo />
+          <Sessions />
         </Route>
 
       </Switch>

@@ -39,7 +39,7 @@ export default function NavMenu() {
                 </NavDropdown>
 
                 <NavDropdown title="Conference Dashboard" id="offcanvasNavbarDropdown">
-                  <NavDropdown.Item href='/demographics'>Attendee Demographics</NavDropdown.Item>
+                  <NavDropdown.Item href='/demographics'>Dashboard (GETs)</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">

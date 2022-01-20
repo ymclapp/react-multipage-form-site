@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+//import axios from 'axios';
 import { Form, FloatingLabel, Button } from 'react-bootstrap';
 
 import './Registration.css';
@@ -11,11 +11,12 @@ export default function Registration() {
 
     const history = useHistory();
 
-const [username, setUsername] = useState('');
-const [email, setEmail] = useState('');
-const [firstName, setFirstName] = useState('');
-const [lastName, setLastName] = useState('');
-const [password, setPassword] = useState('');
+const [username, setUsername] = useState('')
+const [email, setEmail] = useState('')
+const [firstName, setFirstName] = useState('')
+const [lastName, setLastName] = useState('')
+const [password, setPassword] = useState('')
+
 
     async function handleNewUserSubmit(event) {
         event.preventDefault();
@@ -35,22 +36,11 @@ const [password, setPassword] = useState('');
             ),
         })
         .then(response => response.text())
-        .then(data => console.log(data));
-
-        // const form = event.target;
-        // const { username, email, firstName, lastName, password } = form.elements;
-
-        // const registerData = {
-        //     username: username.value,
-        //     email: email.value,
-        //     firstName: firstName.value,
-        //     lastName: lastName.value,
-        //     password: password.value,
-        // };
-        // console.log(registerData);
+        .then(data => console.log(data))
 
         form.reset();
-        history.push('/login')
+        history.push('/login');
+        
     }
 
     return (
@@ -59,31 +49,31 @@ const [password, setPassword] = useState('');
                 <h4 className='form-title text-center'>Create an Account</h4>
                 <Form.Group>
 
-                    <FloatingLabel controlId='floatingInput' label='Username:  ' className='newUserUsername'>
+                    <FloatingLabel controlId='floatingInput1' label='Username:  ' className='newUserUsername'>
                         <Form.Control type='text' name='username' value={username} onChange={e => setUsername(e.target.value)} />
                     </FloatingLabel>
 
                     <br />
 
-                    <FloatingLabel controlId='floatingInput' label='Email:  ' className='newUserEmail'>
+                    <FloatingLabel controlId='floatingInput2' label='Email:  ' className='newUserEmail'>
                         <Form.Control type='text' name='email' value={email} onChange={e => setEmail(e.target.value)} />
                     </FloatingLabel>
 
                     <br />
 
-                    <FloatingLabel controlId='floatingInput' label='First Name:  ' className='newUserFirstName'>
+                    <FloatingLabel controlId='floatingInput3' label='First Name:  ' className='newUserFirstName'>
                         <Form.Control type='text' name='firstName' value={firstName} onChange={e => setFirstName(e.target.value)} />
                     </FloatingLabel>
 
                     <br />
 
-                    <FloatingLabel controlId='floatingInput' label='Last Name:  ' className='newUserLastName'>
+                    <FloatingLabel controlId='floatingInput4' label='Last Name:  ' className='newUserLastName'>
                         <Form.Control type='text' name='lastName' value={lastName} onChange={e => setLastName(e.target.value)} />
                     </FloatingLabel>
 
                     <br />
 
-                    <FloatingLabel controlId='floatingInput' label='Password:  ' className='newUserPassword'>
+                    <FloatingLabel controlId='floatingInput5' label='Password:  ' className='newUserPassword'>
                         <Form.Control type='password' name='password' value={password} onChange={e => setPassword(e.target.value)} />
                     </FloatingLabel>
 
