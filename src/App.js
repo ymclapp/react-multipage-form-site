@@ -17,6 +17,7 @@ import Login from './components/auth/login';
 
 //conference registration
 import DemoForm from './components/conference/DemoForm';
+import SessionsForm from './components/conference/SessionForm';
 
 
 //dashboard
@@ -47,6 +48,10 @@ function App() {
 
         <Route path='/demoform'>
           <DemoForm />
+        </Route>
+
+        <Route path='/sessionsform'>
+          <SessionsForm />
         </Route>
 
         <Route path='/demographics'>

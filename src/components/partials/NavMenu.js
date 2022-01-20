@@ -31,7 +31,7 @@ export default function NavMenu() {
                 {/* <Nav.Link as={Link} to='/demographics' className='navbar-link'>Demographics</Nav.Link> */}
                 <NavDropdown title="Conference Registration" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href='/demoform'>Conference Demographic Form</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="/sessionsform">Conference Sessions Form</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
                     Something else here
