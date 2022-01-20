@@ -3,7 +3,7 @@
     margin-top: 20px;
   }
   
-  .registration-form{
+  .newUser-form{
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     width: 450px;
@@ -17,7 +17,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  .register-button{
+  .newUser-button{
     margin-top: 30px;
     margin-left: 15px;
     color: black;

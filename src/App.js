@@ -1,4 +1,4 @@
-import React from 'react';
+//import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -10,9 +10,9 @@ import Footer from './components/partials/Footer';
 
 //public pages
 import Home from './components/Home';
+import Registration from './components/user/Registration';
 
 //user pages
-import Registration from './components/user/Registration';
 import Login from './components/auth/login';
 
 //conference registration
@@ -25,6 +25,7 @@ import Users from './components/dashboard/Users';
 function App() {
   return (
     <>
+    <Router>
       <NavMenu />
       <Header />
 
@@ -54,6 +55,7 @@ function App() {
       </Switch>
 
       <Footer />
+      </Router>
 
     </>
   );
