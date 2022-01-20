@@ -19,7 +19,7 @@ const [password, setPassword] = useState('');
 
     async function handleNewUserSubmit(event) {
         event.preventDefault();
-        // const form = event.target;
+        const form = event.target;
         // const { username, email, firstName, lastName, password } = form.elements;
 
         console.log('Submitting....');
@@ -49,7 +49,8 @@ const [password, setPassword] = useState('');
         // };
         // console.log(registerData);
 
-        //form.reset();
+        form.reset();
+        history.push('/login')
     }
 
     return (
