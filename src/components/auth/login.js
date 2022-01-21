@@ -1,11 +1,12 @@
 import '../auth/login.css';
+import { Redirect } from 'react-router-dom';
 import { FloatingLabel, Form, Button } from 'react-bootstrap';
-//import useAuth from '../hooks/useAuth';
+import useAuth from '../hooks/useAuth';
 
 
 export default function Login() {
 
-    //const { login }= useAuth();
+    const { login, user }= useAuth();
     
     
     function handleLoginSubmit(event) {
@@ -15,13 +16,16 @@ export default function Login() {
         const { username, password } = form.elements;
 
         const loginData = {
-            username:  username.value,
+            identifier:  username.value,
             password:  password.value,
         };
         console.log(loginData);
 
-        //login(loginData);
+        login(loginData);
         form.reset();
+    }
+    if (user) {
+        return <Redirect to='/'/>
     }
 
     return (

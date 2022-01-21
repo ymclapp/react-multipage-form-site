@@ -4,6 +4,8 @@
 2.  React-Bootstrap
 3.  Bootstrap
 4.  React-Router-Dom - used 5.3.0 - had to load because pages wouldn't change from home page
+5.  React-cookies
+6.  Jsonwebtoken
 
 ##  Referenced:
 
