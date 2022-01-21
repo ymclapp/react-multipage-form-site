@@ -1,28 +1,48 @@
 import '../auth/login.css';
+//import { Redirect } from 'react-router-dom';
 import { FloatingLabel, Form, Button } from 'react-bootstrap';
 //import useAuth from '../hooks/useAuth';
 
+const loginApi = 'http://localhost:1337/api/auth/local';
 
 export default function Login() {
 
-    //const { login }= useAuth();
+    //const { login, user }= useAuth();
     
     
-    function handleLoginSubmit(event) {
+    async function handleLoginSubmit(event) {
         event.preventDefault();
 
         const form = event.target;
         const { username, password } = form.elements;
 
-        const loginData = {
-            username:  username.value,
-            password:  password.value,
-        };
-        console.log(loginData);
+        await fetch (`${loginApi}`, {
+            method:  'POST',
+            headers:  {
+                'Content-Type':  'application/json',
+            },
+
+            body:  JSON.stringify(
+                {
+                    identifier:  username.value,
+                    password:  password.value,
+                }
+            ),
+        })
+
+        
+        // const loginData = {
+        //     identifier:  username.value,
+        //     password:  password.value,
+        // };
+        // console.log(loginData);
 
         //login(loginData);
         form.reset();
     }
+    // if (user) {
+    //     return <Redirect to='/'/>
+    // }
 
     return (
         <>
